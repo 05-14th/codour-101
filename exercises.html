@@ -603,7 +603,7 @@
                         <div class = "question">
                             <p>Use CSS to set the text size to 50 pixels.</p>
                             <p>&lt;p style="<input type="text" id = "style4" maxlength="9" class="ansInput" data-element="6" data-answer="font-size" data-group="16">:50px;"&gt;This is a paragraph.&lt;/p&gt;</p>
-                            <button class="verify" id="16" onclick="checkAns(this.id)">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="16" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
                         <div class = "answer" id="answer16">
                             <p>Use CSS to set the text size to 50 pixels.</p>
@@ -899,7 +899,7 @@
                                 …..<br>
                                 <input maxlength="3" class="ansInput" data-element="8" data-answer="--&gt;" data-group="29_2"><br>
                             </p>
-                            <button class="verify" id="29_2" onclick="checkAns(this.id)">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="29_2" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
                         <div class="answer" id="answer29_2">
                             <p>
@@ -919,7 +919,7 @@
                                     Write a comment with a content "Coding is Awesome"<br>
                                     <input maxlength="24" class="ansInput" data-element="8" data-answer="&lt;!--Coding is Awesome--&gt;" data-group="29_3"><br>
                                 </p>
-                                <button class="verify" id="29_3" onclick="checkAns(this.id)">Submit Answer</button>
+                                <button class="verify" onclick="checkAns(this.id)" id="29_3" onclick="checkAns(this.id)">Submit Answer</button>
                             </div>
                             <div class="answer" id="answer29_3">
                                 <p>
@@ -942,18 +942,18 @@
                             <p>&lt;!DOCTYPE html&gt;</p>
                             <p>&lt;head&gt;</p>
                             <p>&lt;style&gt;</p>
-                            <p><input type="text" id = "css1_2" maxlength="4" class="ansInput" data-element="7"> <input type="text" id = "css1_2" maxlength="1" class="ansInput" data-element="9"></p>
-                            <p><input type="text" id = "css1_3" maxlength="16" class="ansInput" data-element="7">: yellow;</p>
-                            <p><input type="text" id = "css1_4" maxlength="1" class="ansInput" data-element="9"></p>
+                            <p><input type="text" id = "css1_2" maxlength="4" class="ansInput" data-element="7" data-answer="body" data-group="30"> <input type="text" id = "css1_2" maxlength="1" class="ansInput" data-element="9" data-answer="&rbrace;" data-group="30"></p>
+                            <p><input type="text" id = "css1_3" maxlength="16" class="ansInput" data-element="7" data-answer="background-color" data-group="30">: yellow;</p>
+                            <p><input type="text" id = "css1_4" maxlength="1" class="ansInput" data-element="9" data-answer="&lbrace;" data-group="30"></p>
                             <p>&lt;/style&gt;</p>
                             <p>&lt;/head&gt;</p>
                             <p>&lt;body&gt;</p>
                             <p>&lt;h1&gt;My Home Page&lt;/h1&gt;</p>
                             <p>&lt;/body&gt;</p>
                             <p>&lt;/html&gt;</p>
-                            <button class="verify" id="30">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="30" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class="answer">
+                        <div class="answer" id="answer30">
                             <p>Use CSS to set the background color of the document (body) to yellow.</p>
                             <p>&lt;!DOCTYPE html&gt;</p>
                             <p>&lt;!DOCTYPE html&gt;</p>
@@ -986,7 +986,7 @@
                             <p>&lt;h1&gt;My Home Page&lt;/h1&gt;</p>
                             <p>&lt;/body&gt;</p>
                             <p>&lt;/html&gt;</p>
-                            <button class="verify" id="31">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="31">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>&lt;!DOCTYPE html&gt;</p>
@@ -1020,7 +1020,7 @@
                                 <p>&lt;h1&gt;My Home Page&lt;/h1&gt;</p>
                                 <p>&lt;/body&gt;</p>
                                 <p>&lt;/html&gt;</p>
-                                <button class="verify" id="32">Submit Answer</button>
+                                <button class="verify" onclick="checkAns(this.id)" id="32">Submit Answer</button>
                             </div>
                             <div class="answer">
                                 <p>&lt;!DOCTYPE html&gt;</p>
@@ -1056,7 +1056,7 @@
                             <p>&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
                             <p>&lt;/body&gt;</p>
                             <p>&lt;/html&gt;</p>
-                            <button class="verify" id="33">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="33">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>Use CSS to make a yellow, 1 pixel thick, border around all paragraphs.</p>
@@ -1085,7 +1085,7 @@
                         <div class="question">
                             <p>Use the correct HTML to make the text below into a link to "default.html".</p>
                             <p><input type="text" id = "links1_1" maxlength="2" class="ansInput" data-element="9"> <input type="text" id = "links1_2" maxlength="17" class="ansInput" data-element="6">>&gt;Visit our HTML tutorial.<input type="text" id = "links3" maxlength="4" class="ansInput" data-element="8"></p>
-                            <button class="verify" id="34">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="34">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>Use the correct HTML to make the text below into a link to "default.html".</p>
@@ -1099,7 +1099,7 @@
                         <div class="question">
                             <p>Use CSS to remove the underline from the link.</p>
                             <p>&lt;a href="html_images.asp" style="<input type="text" id = "links2" maxlength="21" class="ansInput" data-element="6">"&gt;HTML Images&lt;/a&gt;</p>
-                            <button class="verify" id="35">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="35">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>Use CSS to remove the underline from the link.</p>
@@ -1113,7 +1113,7 @@
                         <div class="question">
                             <p>Use the correct HTML attribute to make the link open in a new window.</p>
                             <p>&lt;a href="html_images.asp" <input type="text" id = "links3" maxlength="15" class="ansInput" data-element="6">&gt;HTML Images&lt;/a&gt;</p>
-                            <button class="verify" id="36">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="36">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>Use the correct HTML attribute to make the link open in a new window.</p>
@@ -1129,7 +1129,7 @@
                             <p><input type="text" id = "links4_1" maxlength="2" class="ansInput" data-element="9"> <input type="text" id = "links4_2" maxlength="20" class="ansInput" data-element="6"></p>
                             <p>&lt;img src="smiley.gif"&gt;</p>
                             <p><input type="text" id = "links4_3" maxlength="4" class="ansInput" data-element="7"></p>
-                            <button class="verify" id="37">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="37">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>Use the correct HTML to make the image become a link to "default.html".</p>
@@ -1146,7 +1146,7 @@
                             <p>Add a "tooltip" to the link.</p>
                             <p>The "tooltip" should say "Home".</p>
                             <p>&lt;a href="default.html" <input type="text" id = "links5" maxlength="12" class="ansInput" data-element="7">&gt;Back to Home&lt;/a&gt;</p>
-                            <button class="verify" id="38">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="38">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>Add a "tooltip" to the link.</p>
@@ -1164,7 +1164,7 @@
                         <div class="question">
                             <p>Use the HTML image attributes to set the size of the image to 250 pixels wide and 400 pixels tall.</p>
                             <p>&lt;img src="scream.png" <input type="text" id = "images1_1" maxlength="5" class="ansInput" data-element="8">="250" <input type="text" id = "images1_2" maxlength="6" class="ansInput" data-element="8">="400"&gt;</p>
-                            <button class="verify" id="39">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="39">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>Use the HTML image attributes to set the size of the image to 250 pixels wide and 400 pixels tall.</p>
@@ -1178,7 +1178,7 @@
                         <div class="question">
                             <p>Use the HTML image attributes to set the size of the image to 250 pixels wide and 400 pixels tall.</p>
                             <p>&lt;img src="scream.png" style="<input type="text" id = "images2" maxlength="24" class="ansInput" data-element="8">;"&gt;</p>
-                            <button class="verify" id="40">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="40">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>Use CSS to set the size of the image to 250 pixels wide and 400 pixels tall.</p>
@@ -1194,7 +1194,7 @@
                             <p><input type="text" id = "images3_1" maxlength="2" class="ansInput" data-element="8"> <input type="text" id = "images3_2" maxlength="19" class="ansInput" data-element="8">&gt;</p>
                             <p>&lt;img src="smiley.gif"&gt;</p>
                             <p><input type="text" id = "images3_3" maxlength="4" class="ansInput" data-element="8"></p>
-                            <button class="verify" id="41">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="41">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>Use the correct HTML to make the image become a link to "default.html".</p>
@@ -1214,7 +1214,7 @@
                             <p>This is a paragraph.</p>
                             <p>This paragraph contains an image</p>
                             <p>&lt;/p&gt;</p>
-                            <button class="verify" id="42">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="42">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>Make the image below float to the right of the paragraph.</p>
@@ -1232,7 +1232,7 @@
                         <div class="question">
                             <p>Add the correct HTML attribute to display the "smiley.gif" image.</p>
                             <p>&lt;img <input type="text" id = "images5" maxlength="16" class="ansInput" data-element="8">&gt;</p>
-                            <button class="verify" id="43">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="43">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>Add the correct HTML attribute to display the "smiley.gif" image.</p>
@@ -1260,7 +1260,7 @@
                                 &lt;td&gt;50&lt;/td&gt;<br>
                                 &lt;/tr&gt;<br>
                                 &lt;/table&gt;<br>
-                                <button class="verify" id="45">Submit Answer</button>
+                                <button class="verify" onclick="checkAns(this.id)" id="45">Submit Answer</button>
                             </p>
                         </div>
                         <div class="answer">
@@ -1301,7 +1301,7 @@
                                 &lt;/tr&gt;<br>
                                 &lt;/table&gt;<br>
                             </p>
-                            <button class="verify" id="46">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="46">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -1342,7 +1342,7 @@
                                 &lt;/tr&gt;<br>
                                 &lt;/table&gt;<br>
                             </p>
-                            <button class="verify" id="47">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="47">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -1385,7 +1385,7 @@
                                 <input type="text" id = "table4_4" maxlength="5" class="ansInput" data-element="8"><br>
                                 &lt;/table&gt;<br>
                             </p>
-                            <button class="verify" id="48">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="48">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -1432,7 +1432,7 @@
                                 &lt;/tr&gt;<br>
                                 &lt;/table&gt;<br>
                             </p>
-                            <button class="verify" id="49">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="49">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -1470,7 +1470,7 @@
                                 <input type="text" id = "lists1_1" maxlength="4" class="ansInput" data-element="8">Coffee<input type="text" id = "lists1_2" maxlength="5" class="ansInput" data-element="8"><br>
                                 &lt;/ul&gt;<br>
                             </p>
-                            <button class="verify" id="50">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="50">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -1493,7 +1493,7 @@
                                 &lt;li&gt;Milk&lt;/li&gt;<br>
                                 <input type="text" id = "lists2_2" maxlength="5" class="ansInput" data-element="8"> <br>                         
                             </p>
-                            <button class="verify" id="51">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="51">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -1520,7 +1520,7 @@
                                     &lt;li&gt;Parrot&lt;/li&gt;<br>
                                     <input type="text" id = "lists3_2" maxlength="5" class="ansInput" data-element="8"> <br>                         
                                 </p>
-                                <button class="verify" id="52">Submit Answer</button>
+                                <button class="verify" onclick="checkAns(this.id)" id="52">Submit Answer</button>
                             </div>
                             <div class="answer">
                                 <p>
@@ -1547,7 +1547,7 @@
                                 &lt;li&gt;Milk&lt;/li&gt;<br>
                                 &lt;/ol&gt;<br>  
                             </p>
-                            <button class="verify" id="53">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="53">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -1558,7 +1558,7 @@
                                 &lt;li&gt;Milk&lt;/li&gt;<br>
                                 &lt;/ol&gt;<br>  
                             </p>
-                            <button class="verify" id="53">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="53">Submit Answer</button>
                         </div>
                     </div>
                 </div>
@@ -1574,7 +1574,7 @@
                                 &lt;li&gt;Milk&lt;/li&gt;<br>
                                 &lt;/ol&gt;<br>
                             </p>
-                            <button class="verify" id="54">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="54">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -1585,7 +1585,7 @@
                                 &lt;li&gt;Milk&lt;/li&gt;<br>
                                 &lt;/ol&gt;<br>
                             </p>
-                            <button class="verify" id="55">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="55">Submit Answer</button>
                         </div>
                     </div>
                 </div>
@@ -1600,7 +1600,7 @@
                                 Assign a class named "special" in this paragraph.<br>
                                 &lt;p class="<input maxlength="8" class="ansInput" data-element="8">"&gt;My Paragraph&lt;/p&gt;<br>
                             </p>
-                            <button class="verify" id="56">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="56">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -1631,7 +1631,7 @@
                                 &lt;/body&gt;<br>
                                 &lt;/html&gt;<br>
                             </p>
-                            <button class="verify" id="57">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="57">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -1672,7 +1672,7 @@
                                 &lt;/body&gt;<br>
                                 &lt;/html&gt;<br>
                             </p>
-                            <button class="verify" id="58">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="58">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -1713,7 +1713,7 @@
                                 &lt;/body&gt;<br>
                                 &lt;/html&gt;<br>
                             </p>
-                            <button class="verify" id="59">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="59">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -1754,7 +1754,7 @@
                                 &lt;/body&gt;<br>
                                 &lt;/html&gt;<br>
                             </p>
-                            <button class="verify" id="60">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="60">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -1788,7 +1788,7 @@
                                 Create an iframe with a URL address that goes to https://www.w3schools.com.<br>
                                 &lt;iframe <input>="https://www.w3schools.com"&gt;<br>&lt;/iframe&gt;<br>
                             </p>
-                            <button class="verify" id="61">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="61">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -1806,7 +1806,7 @@
                                 Use an iframe attribute to make the iframe 500 pixels wide.<br>
                                 &lt;iframe src="https://www.w3schools.com" <input>&gt;<br>&lt;/iframe&gt;<br>
                             </p>
-                            <button class="verify" id="62">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="62">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -1824,7 +1824,7 @@
                                 Use CSS to display an iframe with no borders.<br>
                                 &lt;iframe src="https://www.w3schools.com" style="<input>"&gt;<br>&lt;/iframe&gt;<br>
                             </p>
-                            <button class="verify" id="63">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="63">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -1842,7 +1842,7 @@
                                 Create an iframe with a URL address that goes to "default.html".<br>
                                 <input><br>
                             </p>
-                            <button class="verify" id="64">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="64">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -1868,7 +1868,7 @@
                                 &lt;/script&gt;<br>
                                 &lt;/body&gt;<br>
                             </p>
-                            <button class="verify" id="65">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="65">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -1896,7 +1896,7 @@
                                 &lt;/script&gt;<br>
                                 &lt;/body&gt;<br>
                             </p>
-                            <button class="verify" id="66">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="66">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -1924,7 +1924,7 @@
                                 &lt;/script&gt;<br>
                                 &lt;/body&gt;<br>
                             </pr>
-                            <button class="verify" id="67">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="67">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <pr>
@@ -1952,7 +1952,7 @@
                                 &lt;/script&gt;<br>
                                 &lt;/body&gt;<br>
                             </p>
-                            <button class="verify" id="68">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="68">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -1978,7 +1978,7 @@
                                 Define the text "var person;" as programming code.<br>
                                 &lt;p&gt;Code example: <input>var person;<input>&lt;/p&gt;
                             </p>
-                            <button class="verify" id="69">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="69">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -2000,7 +2000,7 @@
                                 lastName:"Doe"<br>
                                 }&lt;/code&gt;<input><br> 
                             </p>
-                            <button class="verify" id="70">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="70">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -2022,7 +2022,7 @@
                                 Define the character "x" in the equation as a variable.<br>
                                 &lt;p&gt;<br>A simple math equation: <input>x<input>  = 3 + 2; &lt;/p&gt;<br>
                             </p>
-                            <button class="verify" id="71">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="71">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -2045,7 +2045,7 @@
                                 &lt;<input>&gt;<br>
                                 &lt;/form&gt;<br>
                             </p>
-                            <button class="verify" id="72">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="72">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -2068,7 +2068,7 @@
                                 &lt; <input> value="css"&gt; CSS<br>
                                 &lt;/form&gt;<br>
                             </p>
-                            <button class="verify" id="73">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="73">Submit Answer</button>
                         </div>
                         <div class="answer">
                             In the form below, add two radio buttons, both with the name "fav_language".<br>
@@ -2093,7 +2093,7 @@
                                 &lt;<input>&gt;<br>
                                 &lt;/form&gt;<br>
                             </p>
-                            <button class="verify" id="74">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="74">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -2117,7 +2117,7 @@
                                 &lt;input type="submit"&gt;<br>
                                 &lt;/form&gt;<br>
                             </p>
-                            <button class="verify" id="75">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="75">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -2144,7 +2144,7 @@
                                 &lt;/<input>&gt;<br>
                                 &lt;/form&gt;<br>
                             </p>
-                            <button class="verify" id="76">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="76">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -2172,7 +2172,7 @@
                                 &lt;/select&gt;<br>
                                 &lt;/form&gt;<br>
                             </p>
-                            <button class="verify" id="77">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="77">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -2199,7 +2199,7 @@
                                 &lt;<input>&gt;&lt;/<input>&gt;<br>
                                 &lt;/form&gt;<br>
                             </p>
-                            <button class="verify" id="78">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="78">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -2224,7 +2224,7 @@
                                 &lt;<input>&gt;<br>
                                 &lt;/form&gt;<br>
                             </p>
-                            <button class="verify" id="79">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="79">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -2247,7 +2247,7 @@
                                 &lt;input <input>&gt;<br>
                                 &lt;/form&gt;<br>
                             </p>
-                            <button class="verify" id="80">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="80">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -2275,7 +2275,7 @@
                                 &lt;input type="submit"&gt;<br>
                                 &lt;/form&gt;<br>
                             </p>
-                            <button class="verify" id="81">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="81">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -2302,7 +2302,7 @@
                                 &lt;<input>&gt;<br>
                                 &lt;/form&gt;<br>
                             </p>
-                            <button class="verify" id="82">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="82">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -2325,7 +2325,7 @@
                                 &lt;input type="<input>"  <input>="1" <input>="5"&gt;<br>
                                 &lt;/form&gt;<br>
                             </p>
-                            <button class="verify" id="83">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="83">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -2351,7 +2351,7 @@
                                 &lt;input type="text"  &gt;<br>
                                 &lt;/form&gt;<br>
                             </p>
-                            <button class="verify" id="84">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="84">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -2373,7 +2373,7 @@
                                 &lt;input type="text"  &gt;<br>
                                 &lt;/form&gt;<br>
                             </p>
-                            <button class="verify" id="85">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="85">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
@@ -2395,7 +2395,7 @@
                                 &lt;input type="text" <input>&gt;<br>
                                 &lt;/form&gt;<br>
                             </p>
-                            <button class="verify" id="86">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="86">Submit Answer</button>
                         </div>
                         <div class="answer">
                             Set the input field to be read only (meaning that the value cannot be changed).<br>
@@ -2415,7 +2415,7 @@
                                 &lt;input type="text" <input>&gt;<br>
                                 &lt;/form&gt;<br>
                             </p>
-                            <button class="verify" id="87">Submit Answer</button>
+                            <button class="verify" onclick="checkAns(this.id)" id="87">Submit Answer</button>
                         </div>
                         <div class="answer">
                             <p>
