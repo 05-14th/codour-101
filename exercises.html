@@ -8,6 +8,16 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <title>Codour Exercises</title>
     <style>
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
         body {
             margin: 0;
             padding: 0;
@@ -133,6 +143,7 @@
             text-align: left;
             background-color: #999;
             padding: 1px;
+            animation: slideIn 0.5s ease-out;
         }
 
         .answer{
@@ -142,6 +153,7 @@
             text-align: left;
             background-color: #999;
             padding: 1px;
+            animation: slideIn 0.5s ease-out;
         }
 
         .scoreText{
@@ -299,7 +311,7 @@
                            <p>
                                 Specify the English as language and United Kingdom as the country:<br>
                                 &lt;!DOCTYPE html&gt;<br>
-                                &lt;html lang="<input maxlength="5" class="ansInput" data-element="8" data-answer="en-UK" data-group="4_5">"&gt;<br>
+                                &lt;html lang="<input maxlength="5" class="ansInput" data-element="8" data-answer="en-UK" data-group="4_1">"&gt;<br>
                                 &lt;body&gt;<br>
                                 ...<br>
                                 &lt;/body&gt;<br>
@@ -324,17 +336,17 @@
             <section class="toggleSection" style="display: none;" id="se">
                 <h4>HTML Headings</h4>
                 <div>
-                    <div class="exerciseButton" id="exer4.1" data-element="mainExer4.1">Exercise 1</div>
-                    <div class="mainExer" id="mainExer4.1">
+                    <div class="exerciseButton" id="exer4_2" data-element="mainExer4_2">Exercise 1</div>
+                    <div class="mainExer" id="mainExer4_2">
                         <div class = "question">
                             <p>: Use the correct HTML tag to add a heading with the text "London".</p>
-                            <p><input type="text" id = "heading1" maxlength="14" class="ansInput" data-element="8"></p>
+                            <p><input type="text" id = "heading1" maxlength="15" class="ansInput" data-element="8" data-answer="&lt;h1&gt;London&lt;/h1&gt;" data-group="4_2"></p>
                             <p>&lt;p&gt;London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.&lt;/p&gt;</p>
-                            <button class = "verify" data-element="5">Submit Answer</button>
+                            <button class = "verify" id="4_2" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer4_2">
                             <p>: Use the correct HTML tag to add a heading with the text "London".</p>
-                            <p><input type="text" maxlength="14" class="ansInput" data-element="8" value = "&lt;h1&gt;London&lt;/h1&gt;"></p>
+                            <p><input type="text" maxlength="15" class="ansInput" data-element="8" value = "&lt;h1&gt;London&lt;/h1&gt;"></p>
                             <p>&lt;p&gt;London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.&lt;/p&gt;</p>
                         </div>
                     </div>
@@ -347,27 +359,27 @@
                             <p>Start with the most important heading (the largest) and end with the least important heading (the smallest).</p>
                             <p>&lt;html&gt;</p>
                             <p>&lt;body&gt;</p>
-                            <p><input type="text" id = "heading2_1" maxlength="13" class="ansInput" data-element="8"></p>
-                            <p><input type="text" id = "heading2_2" maxlength="13" class="ansInput" data-element="8"></p>      
-                            <p><input type="text" id = "heading2_3" maxlength="13" class="ansInput" data-element="8"></p>        
-                            <p><input type="text" id = "heading2_4" maxlength="13" class="ansInput" data-element="8"></p>        
-                            <p><input type="text" id = "heading2_5" maxlength="13" class="ansInput" data-element="8"></p>        
-                            <p><input type="text" id = "heading2_6" maxlength="13" class="ansInput" data-element="8"></p>        
+                            <p><input type="text" id = "heading2_1" maxlength="14" class="ansInput" data-element="8" data-answer="&lt;h1&gt;Hello&lt;/h1&gt;" data-group="5"></p>
+                            <p><input type="text" id = "heading2_2" maxlength="14" class="ansInput" data-element="8" data-answer="&lt;h2&gt;Hello&lt;/h2&gt;" data-group="5"></p>      
+                            <p><input type="text" id = "heading2_3" maxlength="14" class="ansInput" data-element="8" data-answer="&lt;h3&gt;Hello&lt;/h3&gt;" data-group="5"></p>        
+                            <p><input type="text" id = "heading2_4" maxlength="14" class="ansInput" data-element="8" data-answer="&lt;h4&gt;Hello&lt;/h4&gt;" data-group="5"></p>        
+                            <p><input type="text" id = "heading2_5" maxlength="14" class="ansInput" data-element="8" data-answer="&lt;h5&gt;Hello&lt;/h5&gt;" data-group="5"></p>        
+                            <p><input type="text" id = "heading2_6" maxlength="14" class="ansInput" data-element="8" data-answer="&lt;h6&gt;Hello&lt;/h6&gt;" data-group="5"></p>        
                             <p>&lt;/body&gt;</p>
                             <p>&lt;/html&gt;</p>
-                            <button class = "verify" data-element="6">Submit Answer</button>
+                            <button class = "verify" id="5" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer5">
                             <p>Add six headings to the document with the text "Hello".</p>
                             <p>Start with the most important heading (the largest) and end with the least important heading (the smallest).</p>
                             <p>&lt;html&gt;</p>
                             <p>&lt;body&gt;</p>
-                            <p><input type="text" maxlength="13" class="ansInput" data-element="8" value="&lt;h1&gt;Hello&lt;/h1&gt;" readonly></p>
-                            <p><input type="text" maxlength="13" class="ansInput" data-element="8" value="&lt;h2&gt;Hello&lt;/h2&gt;" readonly></p>      
-                            <p><input type="text" maxlength="13" class="ansInput" data-element="8" value="&lt;h3&gt;Hello&lt;/h3&gt;" readonly></p>        
-                            <p><input type="text" maxlength="13" class="ansInput" data-element="8" value="&lt;h4&gt;Hello&lt;/h4&gt;" readonly></p>        
-                            <p><input type="text" maxlength="13" class="ansInput" data-element="8" value="&lt;h5&gt;Hello&lt;/h5&gt;" readonly></p>        
-                            <p><input type="text" maxlength="13" class="ansInput" data-element="8" value="&lt;h6&gt;Hello&lt;/h6&gt;" readonly></p>        
+                            <p><input type="text" maxlength="14" class="ansInput" data-element="8" value="&lt;h1&gt;Hello&lt;/h1&gt;" readonly></p>
+                            <p><input type="text" maxlength="14" class="ansInput" data-element="8" value="&lt;h2&gt;Hello&lt;/h2&gt;" readonly></p>      
+                            <p><input type="text" maxlength="14" class="ansInput" data-element="8" value="&lt;h3&gt;Hello&lt;/h3&gt;" readonly></p>        
+                            <p><input type="text" maxlength="14" class="ansInput" data-element="8" value="&lt;h4&gt;Hello&lt;/h4&gt;" readonly></p>        
+                            <p><input type="text" maxlength="14" class="ansInput" data-element="8" value="&lt;h5&gt;Hello&lt;/h5&gt;" readonly></p>        
+                            <p><input type="text" maxlength="14" class="ansInput" data-element="8" value="&lt;h6&gt;Hello&lt;/h6&gt;" readonly></p>        
                             <p>&lt;/body&gt;</p>
                             <p>&lt;/html&gt;</p>
                         </div>
@@ -383,13 +395,13 @@
                             <p>"About" is the third most important heading.</p>
                             <p> The last sentence is just a paragraph.</p>       
                             <p>Start with the most important heading (the largest) and end with the least important heading (the smallest).</p>
-                            <p><input type="text" id = "heading3_1" maxlength="4" class="ansInput" data-element="8">Universal Studios Presents<input type="text" id = "heading2_1" maxlength="5" class="ansInput" data-element="7"></p>
-                            <p><input type="text" id = "heading3_2" maxlength="4" class="ansInput" data-element="8">Jurassic Park <input type="text" id = "heading2_1" maxlength="5" class="ansInput" data-element="7"></p>
-                            <p><input type="text" id = "heading3_3" maxlength="4" class="ansInput" data-element="8">About<input type="text" id = "heading2_1" maxlength="5" class="ansInput" data-element="7"></p>
-                            <p><input type="text" id = "heading3_4" maxlength="3" class="ansInput" data-element="8">On the Island of Isla Nublar, a new park has been built: Jurassic Park is a theme park of cloned dinosaurs!! <input type="text" id = "heading2_1" maxlength="4" class="ansInput" data-element="7"></p>
-                            <button class = "verify" data-element="7">Submit Answer</button>
+                            <p><input type="text" id = "heading3_1" maxlength="4" class="ansInput" data-element="8" data-answer="&lt;h1&gt;" data-group="6">Universal Studios Presents<input type="text" id = "heading2_1" maxlength="5" class="ansInput" data-element="7" data-answer="&lt;/h1&gt;" data-group="6"></p>
+                            <p><input type="text" id = "heading3_2" maxlength="4" class="ansInput" data-element="8" data-answer="&lt;h2&gt;" data-group="6">Jurassic Park <input type="text" id = "heading2_1" maxlength="5" class="ansInput" data-element="7" data-answer="&lt;/h2&gt;" data-group="6"></p>
+                            <p><input type="text" id = "heading3_3" maxlength="4" class="ansInput" data-element="8" data-answer="&lt;h3&gt;" data-group="6">About<input type="text" id = "heading2_1" maxlength="5" class="ansInput" data-element="7" data-answer="&lt;/h3&gt;" data-group="6"></p>
+                            <p><input type="text" id = "heading3_4" maxlength="3" class="ansInput" data-element="8" data-answer="&lt;p&gt;" data-group="6">On the Island of Isla Nublar, a new park has been built: Jurassic Park is a theme park of cloned dinosaurs!! <input type="text" id = "heading2_1" maxlength="4" class="ansInput" data-element="7" data-answer="&lt;/p&gt;" data-group="6"></p>
+                            <button class = "verify" id="6" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer6">
                             <p>Mark up the text with appropriate tags:</p>
                             <p>"Universal Studios Presents" is the most important heading.</p>
                             <p>"Jurassic Park" is the next most important heading.</p>
@@ -400,6 +412,42 @@
                             <p><input type="text" maxlength="4" class="ansInput" data-element="8" value="&lt;h2&gt;" readonly>Jurassic Park <input type="text" maxlength="5" class="ansInput" data-element="7" value="&lt;/h2&gt;" readonly></p>
                             <p><input type="text" maxlength="4" class="ansInput" data-element="8" value="&lt;h3&gt;" readonly>About<input type="text" maxlength="5" class="ansInput" data-element="7" value="&lt;/h3&gt;" readonly></p>
                             <p><input type="text" maxlength="3" class="ansInput" data-element="8" value="&lt;p&gt;" readonly>On the Island of Isla Nublar, a new park has been built: Jurassic Park is a theme park of cloned dinosaurs!! <input type="text" maxlength="4" class="ansInput" data-element="7" value="&lt;/p&gt;" readonly></p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="exerciseButton" id="exer6_1" data-element="mainExer6_1">Exercise 4</div>
+                        <div class="mainExer" id="mainExer6_1">
+                            <div class = "question">
+                                <p>
+                                    Set the font-size of the heading 5 to 28px.<br>
+                                    &lt;h5 style="<input maxlength="14" class="ansInput" data-element="6" data-answer="font-size:28px" data-group="6_1">"&gt;Heading 5&lt;/h5&gt;<br>
+                                </p>
+                                <button class = "verify" id="6_1" onclick="checkAns(this.id)">Submit Answer</button>
+                            </div>
+                            <div class = "answer" id="answer6_1">
+                                <p>
+                                    Set the font-size of the heading 5 to 28px.<br>
+                                    &lt;h1 style="<input maxlength="14" class="ansInput" data-element="6" value="font-size:28px" readonly>"&gt;Heading 1&lt;/h1&gt;<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="exerciseButton" id="exer6_2" data-element="mainExer6_2">Exercise 5</div>
+                        <div class="mainExer" id="mainExer6_2">
+                            <div class = "question">
+                                <p>
+                                    Set the font-size of the heading 5 to 28px.<br>
+                                    <input maxlength="4" class="ansInput" data-element="8" data-answer="&lt;h3&gt;" data-group="6_2">Heading 3<input maxlength="5" class="ansInput" data-element="7" data-answer="&lt;/h3&gt;" data-group="6_2"><br>
+                                </p>
+                                <button class = "verify" id="6_2" onclick="checkAns(this.id)">Submit Answer</button>
+                            </div>
+                            <div class = "answer" id="answer6_2">
+                                <p>
+                                    Set the font-size of the heading 5 to 28px.<br>
+                                    <input maxlength="4" class="ansInput" data-element="8" value="&lt;h3&gt;" readonly>Heading 3<input maxlength="5" class="ansInput" data-element="7" value="&lt;h3&gt;" readonly><br>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -413,12 +461,12 @@
                             <p>Use the correct HTML tag to add a paragraph with the text "Hello World!".</p>
                             <p>&lt;html&gt;</p>
                             <p>&lt;body&gt;</p>
-                            <p><input type="text" id = "paragraph1" maxlength="19" class="ansInput" data-element="7"></p> 
+                            <p><input type="text" id = "paragraph1" maxlength="19" class="ansInput" data-element="7" data-answer="&lt;p&gt;Hello World!&lt;/p&gt;" data-group="7"></p> 
                             <p>&lt;/body&gt;</p>
                             <p>&lt;/html&gt;</p>
-                            <button class = "verify" data-element="8">Submit Answer</button>
+                            <button class = "verify" id="7" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class="answer">
+                        <div class="answer" id="answer7">
                             <p>Use the correct HTML tag to add a paragraph with the text "Hello World!".</p>
                             <p>&lt;html&gt;</p>
                             <p>&lt;body&gt;</p>
@@ -433,11 +481,11 @@
                     <div class="mainExer" id="mainExer8"> 
                         <div class = "question">
                             <p>Clean up this document with proper end tags.</p>
-                            <p>&lt;h1&gt;This is a Heading<input type="text" id = "paragraph2_1" maxlength="5" class="ansInput" data-element="8"></p> 
-                            <p>&lt;p&gt;This is a paragraph.<input type="text" id = "paragraph2_2" maxlength="4" class="ansInput" data-element="8"></p> 
-                            <button class = "verify" data-element="9">Submit Answer</button>
+                            <p>&lt;h1&gt;This is a Heading<input type="text" id = "paragraph2_1" maxlength="5" class="ansInput" data-element="8" data-answer = "&lt;/h1&gt;" data-group="8"></p> 
+                            <p>&lt;p&gt;This is a paragraph.<input type="text" id = "paragraph2_2" maxlength="4" class="ansInput" data-element="8" data-answer = "&lt;/h1&gt;" data-group="8"></p> 
+                            <button class = "verify" id="8">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer8">
                             <p>Clean up this document with proper end tags.</p>
                             <p>&lt;h1&gt;This is a Heading<input type="text" maxlength="5" class="ansInput" data-element="8" value = "&lt;/h1&gt;"></p> 
                             <p>&lt;p&gt;This is a paragraph.<input type="text" maxlength="4" class="ansInput" data-element="8" value = "&lt;/p&gt;"></p> 
