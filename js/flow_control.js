@@ -147,8 +147,10 @@ function showHidden(id){
 }
 
 
-function checkAns(id){
+function checkAns(id_){
+    const tapButton = document.getElementById(id_);
     const scoreboard = document.getElementById("scoreboard");
+    const id = id_;
     const DataAnswers = getDataAnswersByGroup(id);
     const playerAnswer = getInputValuesByDataGroup(id);
     if(arraysAreEqual(DataAnswers, playerAnswer)){
@@ -159,6 +161,7 @@ function checkAns(id){
         wrongAns(id);
     }
     showHidden(id);
+    tapButton.disabled = true;
 }
 
 

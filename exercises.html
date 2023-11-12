@@ -105,7 +105,7 @@
         .exerciseButton {
             border: 1px solid #bbb;
             background-color: #333;
-            width: 90%;
+            width: 50%;
             height: 50px;
             display: flex;
             justify-content: center;
@@ -128,13 +128,20 @@
 
         .question{
             border: 1px solid #000000;
-            width: 90%;
+            width: 50%;
+            display: block;
+            text-align: left;
+            background-color: #999;
+            padding: 1px;
         }
 
         .answer{
             display: none;
             border: 1px solid #000000;
-            width: 90%;
+            width: 50%;
+            text-align: left;
+            background-color: #999;
+            padding: 1px;
         }
 
         .scoreText{
@@ -153,6 +160,10 @@
             border: 1px solid red;
             color: rgb(161, 147, 147);
             pointer-events: none;
+        }
+
+        .verify {
+            height: 150%;
         }
         /* Responsiveness */
         @media (min-width: 344px) and (max-width: 804px) {
@@ -228,7 +239,7 @@
                         <div class = "question">
                             <p>Add a "tooltip" to the paragraph below with the text "About Codour".</p>
                             <p>&lt;p <input type="text" id="attr1" maxlength="5" class="ansInput" data-element="4" data-answer="title" data-group="1"> ="About Codour"&gt;Codour is a web developer's site.&lt;/p&gt;</p>
-                            <button class = "verify" id="1" onclick="checkAns(this.id)">Submit Answer</button>
+                            <button class = "verify" id="1" onclick="checkAns('1')">Submit Answer</button>
                         </div>
                         <div class = "answer" id = "answer1">
                             <h3>Answer: </h3>
@@ -272,12 +283,40 @@
                     <div class="mainExer" id="mainExer4">
                         <div class = "question">
                             <p>Alternate text is useful when the image cannot be displayed, like when the page is read by a screen reader.</p>
-                            <p>&lt;img src="Codour.png"  <input type="text" id = "attr4" maxlength="3" class="ansInput" data-element="7">="Codour Logo"&gt;</p>
-                            <button class = "verify" data-element="4">Submit Answer</button>
+                            <p>&lt;img src="Codour.png"  <input type="text" id = "attr4" maxlength="3" class="ansInput" data-element="7" data-answer="alt" data-group="4">="Codour Logo"&gt;</p>
+                            <button class = "verify" id="4" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer4">
                             <p>Alternate text is useful when the image cannot be displayed, like when the page is read by a screen reader.</p>
                             <p>&lt;img src="Codour.png"  <input type="text" maxlength="3" class="ansInput" data-element="7" value="alt" readonly>="Codour Logo"&gt;</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="exerciseButton" id="exer4_5" data-element="mainExer4_5">Exercise 5</div>
+                    <div class="mainExer" id="mainExer4_5">
+                        <div class="question">
+                           <p>
+                                Specify the English as language and United Kingdom as the country:<br>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html lang="<input maxlength="5" class="ansInput" data-element="8" data-answer="en-UK" data-group="4_5">"&gt;<br>
+                                &lt;body&gt;<br>
+                                ...<br>
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;<br>
+                           </p>
+                           <button class = "verify" id="4_5" onclick="checkAns(this.id)">Submit Answer</button>
+                        </div>
+                        <div class="answer" id="answer4_5">
+                            <p>
+                                Specify the English as language and United Kingdom as the country:<br>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html lang="<input maxlength="5" class="ansInput" data-element="8" value="en-UK" readonly>"&gt;<br>
+                                &lt;body&gt;<br>
+                                ...<br>
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;<br>
+                            </p>
                         </div>
                     </div>
                 </div>
