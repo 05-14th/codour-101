@@ -482,8 +482,8 @@
                         <div class = "question">
                             <p>Clean up this document with proper end tags.</p>
                             <p>&lt;h1&gt;This is a Heading<input type="text" id = "paragraph2_1" maxlength="5" class="ansInput" data-element="8" data-answer = "&lt;/h1&gt;" data-group="8"></p> 
-                            <p>&lt;p&gt;This is a paragraph.<input type="text" id = "paragraph2_2" maxlength="4" class="ansInput" data-element="8" data-answer = "&lt;/h1&gt;" data-group="8"></p> 
-                            <button class = "verify" id="8">Submit Answer</button>
+                            <p>&lt;p&gt;This is a paragraph.<input type="text" id = "paragraph2_2" maxlength="4" class="ansInput" data-element="8" data-answer = "&lt;/p&gt;" data-group="8"></p> 
+                            <button class = "verify" id="8" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
                         <div class = "answer" id="answer8">
                             <p>Clean up this document with proper end tags.</p>
@@ -498,13 +498,13 @@
                         <div class = "question">
                             <p>Add a horizontal rule between the heading and the paragraph.</p>
                             <p>&lt;h1&gt;This is a Heading&lt;/h1&gt;</p>
-                            <p><input type="text" id = "paragraph3" maxlength="4" class="ansInput" data-element="8"></p> 
+                            <p><input type="text" id = "paragraph3" maxlength="4" class="ansInput" data-element="8" data-answer="&lt;hr&gt;" data-group="9"></p> 
                             <p>
                                 &lt;p&gt;London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.&lt;/p&gt;
                             </p> 
-                            <button class = "verify" data-element="10">Submit Answer</button>
+                            <button class = "verify" id="9" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer9">
                             <p>Add a horizontal rule between the heading and the paragraph.</p>
                             <p>&lt;h1&gt;This is a Heading&lt;/ht&gt;</p>
                             <p><input type="text" maxlength="4" class="ansInput" data-element="7" value="&lt;hr&gt;" readonly></p> 
@@ -519,10 +519,10 @@
                     <div class="mainExer" id="mainExer10">
                         <div class = "question">
                             <p>Add a line break in the middle of the paragraph:</p>
-                            <p>&lt;p&gt;My Bonnie<input type="text" id = "paragraph4" maxlength="4" class="ansInput" data-element="7">lies over the ocean.&lt;/p&gt;</p>
-                            <button class = "verify" data-element="11">Submit Answer</button>
+                            <p>&lt;p&gt;My Bonnie<input type="text" id = "paragraph4" maxlength="4" class="ansInput" data-element="7" data-answer="&lt;br&gt;" data-group="10">lies over the ocean.&lt;/p&gt;</p>
+                            <button class = "verify" id="10" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer10">
                             <p>Add a line break in the middle of the paragraph:</p>
                             <p>&lt;p&gt;My Bonnie<input type="text" maxlength="4" class="ansInput" data-element="7" value="&lt;br&gt;" readonly>lies over the ocean.&lt;/p&gt;</p>
                         </div>
@@ -533,15 +533,15 @@
                     <div class="mainExer" id="mainExer11">
                         <div class = "question">
                             <p>Wrap this poem around HTML tags that will preserve all spaces and linebreaks when the element is displayed.</p>
-                            <p><input type="text" id = "paragraph5" maxlength="5" class="ansInput" data-element="8"></p>
+                            <p><input type="text" id = "paragraph5" maxlength="5" class="ansInput" data-element="8" data-answer="&lt;pre&gt;" data-group="11"></p>
                             <p>My Bonnie lies over the ocean.</p>
                             <p>My Bonnie lies over the sea.</p>
                             <p>My Bonnie lies over the ocean.</p>
                             <p>Oh, bring back my Bonnie to me.</p>
-                            <p><input type="text" id = "paragraph5" maxlength="6" class="ansInput" data-element="9"></p>
-                            <button class = "verify" data-element="11">Submit Answer</button>
+                            <p><input type="text" id = "paragraph5" maxlength="6" class="ansInput" data-element="7" data-answer="&lt;/pre&gt;" data-group="11"></p>
+                            <button class = "verify" id="11" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer11">
                             <p>Wrap this poem around HTML tags that will preserve all spaces and linebreaks when the element is displayed.</p>
                             <p><input type="text" maxlength="5" class="ansInput" data-element="7" value="&lt;pre&gt;" readonly></p>
                             <p>My Bonnie lies over the ocean.</p>
@@ -560,10 +560,10 @@
                     <div class="mainExer" id="mainExer13">
                         <div class = "question">
                             <p>Use the correct HTML attribute, and CSS, to set the color of the paragraph to "blue".</p>
-                            <p>&lt;p <input type="text" id = "style1" maxlength="5" class="ansInput" data-element="6">="<input type="text" id = "style1_2" maxlength="10" class="ansInput" data-element="6">;"&gt;This is a paragraph.&lt;/p&gt;</p>
-                            <button class = "verify" data-element="13">Submit Answer</button>
+                            <p>&lt;p <input type="text" id = "style1" maxlength="5" class="ansInput" data-element="6" data-answer="style" data-group="13">="<input type="text" id = "style1_2" maxlength="10" class="ansInput" data-element="6" data-answer="color:blue" data-group="13">;"&gt;This is a paragraph.&lt;/p&gt;</p>
+                            <button class = "verify" id="13"onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer13">
                             <p>Use the correct HTML attribute, and CSS, to set the color of the paragraph to "blue".</p>
                             <p>&lt;p  <input type="text" maxlength="5" class="ansInput" data-element="6" value="style" readonly>="<input type="text" maxlength="10" class="ansInput" data-element="6" value="color:blue" readonly>;"&gt;This is a paragraph.&lt;/p&gt;</p>
                         </div>
@@ -574,10 +574,10 @@
                     <div class="mainExer" id="mainExer14">
                         <div class = "question">
                             <p>Use CSS to set the font of the paragraph to "courier".</p>
-                            <p>&lt;p style="<input type="text" id = "style2" maxlength="11" class="ansInput" data-element="6"> :courier;"&gt;This is a paragraph.&lt;/p&gt;</p>
-                            <button class = "verify" data-element="14">Submit Answer</button>
+                            <p>&lt;p style="<input type="text" id = "style2" maxlength="11" class="ansInput" data-element="6" data-answer="font-family" data-group="14"> :courier;"&gt;This is a paragraph.&lt;/p&gt;</p>
+                            <button class = "verify" id="14" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer14">
                             <p>Use CSS to set the font of the paragraph to "courier".</p>
                             <p>&lt;p style="<input type="text" maxlength="11" class="ansInput" data-element="6" value="font-family" readonly> :courier;"&gt;This is a paragraph.&lt;/p&gt;</p>
                         </div>
@@ -588,10 +588,10 @@
                     <div class="mainExer" id="mainExer15">
                         <div class = "question">
                             <p>Use CSS to center align the paragraph.</p>
-                            <p>&lt;p style="<input type="text" id = "style3" maxlength="10" class="ansInput" data-element="6">:center;"&gt;This is a paragraph.&lt;/p&gt;</p>
-                            <button class = "verify" data-element="15">Submit Answer</button>
+                            <p>&lt;p style="<input type="text" id = "style3" maxlength="10" class="ansInput" data-element="6" data-answer="text-align" data-group="15">:center;"&gt;This is a paragraph.&lt;/p&gt;</p>
+                            <button class = "verify" id="15" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer15">
                             <p>Use CSS to center align the paragraph.</p>
                             <p>&lt;p style="<input type="text" maxlength="10" class="ansInput" data-element="6" value="text-align" readonly>:center;"&gt;This is a paragraph.&lt;/p&gt;</p>
                         </div>
@@ -602,10 +602,10 @@
                     <div class="mainExer" id="mainExer16">
                         <div class = "question">
                             <p>Use CSS to set the text size to 50 pixels.</p>
-                            <p>&lt;p style="<input type="text" id = "style4" maxlength="9" class="ansInput" data-element="6">:50px;"&gt;This is a paragraph.&lt;/p&gt;</p>
-                            <button class = "verify" data-element="16">Submit Answer</button>
+                            <p>&lt;p style="<input type="text" id = "style4" maxlength="9" class="ansInput" data-element="6" data-answer="font-size" data-group="16">:50px;"&gt;This is a paragraph.&lt;/p&gt;</p>
+                            <button class = "verify" data-element="16" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer16">
                             <p>Use CSS to set the text size to 50 pixels.</p>
                             <p></p>&lt;p style="<input type="text" maxlength="9" class="ansInput" data-element="6" value="font-size" readonly>:50px;"&gt;This is a paragraph.&lt;/p&gt;</p>
                         </div>
@@ -616,14 +616,14 @@
                     <div class="mainExer" id="mainExer17">
                         <div class = "question">
                             <p>&lt;html&gt;</p>
-                            <p>&lt;body style="<input type="text" id = "style5" maxlength="16" class="ansInput" data-element="7">:yellow;"&gt;</p>
+                            <p>&lt;body style="<input type="text" id = "style5" maxlength="16" class="ansInput" data-element="7" data-answer="background-color" data-group="17">:yellow;"&gt;</p>
                             <p>&lt;h1&gt;This is a heading&lt;/h1&gt;</p>
                             <p>&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
                             <p>&lt;/body&gt;</p>
                             <p>&lt;/html&gt;</p>
-                            <button class = "verify" data-element="17">Submit Answer</button>
+                            <button class = "verify" id="17" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer17">
                             <p>Use CSS to set the background color of the document to yellow.</p>
                             <p>&lt;html&gt;</p>
                             <p>&lt;body style="<input type="text" maxlength="16" class="ansInput" data-element="7" value="background-color" readonly>:yellow;"&gt;</p>
@@ -644,11 +644,11 @@
                             <p>Emphasize the word "metropolitan" in the text below.</p>
                             <p>&lt;h1&gt;Tokyo&lt;/h1&gt;</p>
                             <p>&lt;p&gt;</p>
-                            <p>WWF's mission is to stop the <input type="text" id = "formatting1" maxlength="8" class="ansInput" data-element="7">degradation<input type="text" id = "formatting1_1" maxlength="9" class="ansInput" data-element="7"> of our planet's natural environment.</p>
+                            <p>WWF's mission is to stop the <input type="text" id = "formatting1" maxlength="8" class="ansInput" data-element="7" data-answer="&lt;strong&gt;" data-group="19">degradation<input type="text" id = "formatting1_1" maxlength="9" class="ansInput" data-element="7" data-answer="&lt;/strong&gt;" data-group="19"> of our planet's natural environment.</p>
                             <p>&lt;/p&gt;</p>
-                            <button class = "verify" data-element="19">Submit Answer</button>
+                            <button class = "verify" id="19" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer19">
                             <p>Emphasize the word "metropolitan" in the text below.</p>
                             <p>&lt;h1&gt;Tokyo&lt;/h1&gt;</p>
                             <p>&lt;p&gt;</p>
@@ -664,12 +664,12 @@
                             <p>Emphasize the word "metropolitan" in the text below.</p>
                             <p>&lt;h1&gt;Tokyo&lt;/h1&gt;</p>
                             <p>&lt;p&gt;
-                                Tokyo is the capital of Japan, the most populous <input type="text" id = "formatting2" maxlength="4" class="ansInput" data-element="9">metropolitan<input type="text" id = "formatting2_1" maxlength="5" class="ansInput" data-element="8">  area in the world.
+                                Tokyo is the capital of Japan, the most populous <input type="text" id = "formatting2" maxlength="4" class="ansInput" data-element="9" data-answer="&lt;em&gt;" data-group="20">metropolitan<input type="text" id = "formatting2_1" maxlength="5" class="ansInput" data-element="8" data-answer="&lt;/em&gt;" data-group="20">  area in the world.
                                 &lt;/p&gt;                                
                             </p>
-                            <button class = "verify" data-element="20">Submit Answer</button>
+                            <button class = "verify" id="20" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer20">
                             <p>Emphasize the word "metropolitan" in the text below.</p>
                             <p>&lt;h1&gt;Tokyo&lt;/h1&gt;</p>
                             <p>&lt;p&gt;
@@ -685,11 +685,11 @@
                         <div class = "question">
                             <p>Highlight the word "FUN" in the text below.</p>
                             <p>&lt;p&gt;</p>
-                            <p>HTML is <input type="text" id = "formatting3" maxlength="4" class="ansInput" data-element="9">FUN<input type="text" id = "formatting2_1" maxlength="5" class="ansInput" data-element="8">to learn!</p>
+                            <p>HTML is <input type="text" id = "formatting3" maxlength="4" class="ansInput" data-element="9" data-answer="&lt;mark&gt;" data-group="21">FUN<input type="text" id = "formatting2_1" maxlength="5" class="ansInput" data-element="8" data-answer="&lt;/mark&gt;" data-group="21">to learn!</p>
                             <p>&lt;p&gt;</p>
-                            <button class = "verify" data-element="21">Submit Answer</button>
+                            <button class = "verify" id="21" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer21">
                             <p>Highlight the word "FUN" in the text below.</p>
                             <p>&lt;p&gt;</p>
                             <p>HTML is <input type="text" maxlength="6" class="ansInput" data-element="8" value="&lt;mark&gt;" readonly>FUN<input type="text" maxlength="7" class="ansInput" data-element="7" value="&lt;/mark&gt;" readonly>to learn!</p>
@@ -703,11 +703,11 @@
                         <div class = "question">
                             <p>Apply subscript formatting to the number "2" in the text below.</p>
                             <p>&lt;p&gt;</p>
-                            <p>H<input type="text" id = "formatting4" maxlength="5" class="ansInput" data-element="8">2<input type="text" id = "formatting4_1" maxlength="6" class="ansInput" data-element="7">O is the scientific term for water.</p>
+                            <p>H<input type="text" id = "formatting4" maxlength="5" class="ansInput" data-element="8" data-answer="&lt;sub&gt;" data-group="22">2<input type="text" id = "formatting4_1" maxlength="6" class="ansInput" data-element="7" data-answer="&lt;/sub&gt;" data-group="22">O is the scientific term for water.</p>
                             <p>&lt;/p&gt;</p>
-                            <button class = "verify" data-element="22">Submit Answer</button>
+                            <button class = "verify" id="22" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer22">
                             <p>Apply subscript formatting to the number "2" in the text below.</p>
                             <p>&lt;p&gt;</p>
                             <p>H<input type="text" maxlength="5" class="ansInput" data-element="8" value="&lt;sub&gt;" readonly>2<input type="text" maxlength="6" class="ansInput" data-element="7" value="&lt;/sub&gt;" readonly>O is the scientific term for water.</p>
@@ -721,11 +721,11 @@
                         <div class = "question">
                             <p>Add a line through (strikeout) the letters "blue" in the text below.</p>
                             <p>&lt;p&gt;</p>
-                            <p>My favorite color is <input type="text" id = "formatting5" maxlength="5" class="ansInput" data-element="7">blue<input type="text" id = "formatting5_1" maxlength="6" class="ansInput" data-element="6"> red.</p>
+                            <p>My favorite color is <input type="text" id = "formatting5" maxlength="5" class="ansInput" data-element="7" data-answer="&lt;del&gt;" data-group="23">blue<input type="text" id = "formatting5_1" maxlength="6" class="ansInput" data-element="6" data-answer="&lt;/del&gt;" data-group="23"> red.</p>
                             <p>&lt;/p&gt;</p>
-                            <button class = "verify" data-element="23">Submit Answer</button>
+                            <button class = "verify" id="23" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer23">
                             <p>Add a line through (strikeout) the letters "blue" in the text below.</p>
                             <p>&lt;p&gt;</p>
                             <p>My favorite color is <input type="text" maxlength="5" class="ansInput" data-element="7" value="&lt;del&gt;" readonly>blue<input type="text" maxlength="6" class="ansInput" data-element="6" value="&lt;/del&gt;" readonly> red.</p>
@@ -742,11 +742,11 @@
                         <div class = "question">
                             <p>Use an HTML element to add quotation marks around the letters "cool".</p>
                             <p>&lt;p&gt;</p>
-                            <p>I am so <input type="text" id = "quotation1" maxlength="3" class="ansInput" data-element="8">cool<input type="text" id = "quotation1_1" maxlength="4" class="ansInput" data-element="7">.</p>
+                            <p>I am so <input type="text" id = "quotation1" maxlength="3" class="ansInput" data-element="8" data-answer="&lt;q&gt;" data-group="24">cool<input type="text" id = "quotation1_1" maxlength="4" class="ansInput" data-element="7" data-answer="&lt;/q&gt;" data-group="24">.</p>
                             <p>&lt;/p&gt;</p>
-                            <button class = "verify" data-element="24">Submit Answer</button>
+                            <button class = "verify" id="24" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer24">
                             <p>Use an HTML element to add quotation marks around the letters "cool".</p>
                             <p>&lt;p&gt;</p>
                             <p>I am so <input type="text" maxlength="3" class="ansInput" data-element="8" value="&lt;q&gt;" readonly>cool<input type="text" maxlength="4" class="ansInput" data-element="7" value="&lt;/q&gt;" readonly>.</p>
@@ -762,15 +762,15 @@
                                 Add the proper HTML element to it, and specify that it is quoted from the following URL:
                                 http://www.worldwildlife.org/who/index.html
                             </p>
-                            <p><input type="text" id = "quotation2" maxlength="11" class="ansInput" data-element="8"> <input type="text" id = "quotation2_1" maxlength="4" class="ansInput" data-element="8">="http://www.worldwildlife.org/who/index.html"&gt;</p>
+                            <p><input type="text" id = "quotation2" maxlength="11" class="ansInput" data-element="8" data-answer="&lt;blockqoute" data-group="25"> <input type="text" id = "quotation2_1" maxlength="4" class="ansInput" data-element="8" data-answer="cite" data-group="25">="http://www.worldwildlife.org/who/index.html"&gt;</p>
                             <p>For 50 years, WWF has been protecting the future of nature. The</p> 
                             <p>world's leading conservation organization, WWF works in 100</p>
                             <p>countries and is supported by 1.2 million members in the United</p> 
                             <p>States and close to 5 million globally.</p>
-                            <p><input type="text" id = "quotation2_2" maxlength="12" class="ansInput" data-element="8"></p>                
-                            <button class = "verify" data-element="25">Submit Answer</button>
+                            <p><input type="text" id = "quotation2_2" maxlength="12" class="ansInput" data-element="8" data-answer="&lt;/blockqoute&gt;" data-group="25"></p>                
+                            <button class = "verify" id="25" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer25">
                             <p>The text below should be a quoted section.
                                 Add the proper HTML element to it, and specify that it is quoted from the following URL:
                                 http://www.worldwildlife.org/who/index.html
@@ -790,10 +790,10 @@
                         <div class = "question">
                             <p>Change text direction.</p>
                             <p>Make the text below go right-to-left.</p>
-                            <p><input type="text" id = "quotation3_1" maxlength="15" class="ansInput" data-element="6">What a beautiful day!<input type="text" id = "quotation3_2" maxlength="5" class="ansInput" data-element="9"></p>               
-                            <button class = "verify" data-element="26">Submit Answer</button>
+                            <p><input type="text" id = "quotation3_1" maxlength="15" class="ansInput" data-element="6" data-answer="&lt;bdo dir=&quot;rtl&quot;&gt;" data-group="26">What a beautiful day!<input type="text" id = "quotation3_2" maxlength="5" class="ansInput" data-element="9" data-answer="&lt;/bdo&gt;" data-group="26"></p>               
+                            <button class = "verify" id="26" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer26">
                             <p>Change text direction.</p>
                             <p>Make the text below go right-to-left.</p>
                             <p><input type="text" maxlength="15" class="ansInput" data-element="6" value="&lt;bdo dir=&quot;rtl&quot;&gt;" readonly>What a beautiful day!<input type="text" maxlength="5" class="ansInput" data-element="9" value="&lt;/bdo&gt;" readonly></p>               
@@ -806,13 +806,28 @@
                         <div class = "question">
                             <p>The letters "WHO" in the text below is an abbreviation of "World Health Organization".</p>
                             <p>Use an HTML element to provide the specified abbreviation of "WHO".</p>
-                            <p>The &lt;<input type="text" id = "quotation4" maxlength="4" class="ansInput" data-element="7"> <input type="text" id = "quotation4_1" maxlength="6" class="ansInput" data-element="5">"World Health Organization"&gt; WHO&lt;/<input type="text" id = "quotation4_2" maxlength="4" class="ansInput" data-element="7">&gt; was founded in 1948.</p>               
-                            <button class = "verify" data-element="27">Submit Answer</button>
+                            <p>The &lt;<input type="text" id = "quotation4" maxlength="4" class="ansInput" data-element="7" data-answer="abbr" data-group="27"> <input type="text" id = "quotation4_1" maxlength="6" class="ansInput" data-element="5" data-answer="title=" data-group="27">"World Health Organization"&gt; WHO&lt;/<input type="text" id = "quotation4_2" maxlength="4" class="ansInput" data-element="7" data-answer="abbr" data-group="27">&gt; was founded in 1948.</p>               
+                            <button class = "verify" id="27" onclick="checkAns(this.id)">Submit Answer</button>
                         </div>
-                        <div class = "answer">
+                        <div class = "answer" id="answer27">
                             <p>The letters "WHO" in the text below is an abbreviation of "World Health Organization".</p>
                             <p>Use an HTML element to provide the specified abbreviation of "WHO".</p>
                             <p>The &lt;<input type="text" maxlength="4" class="ansInput" data-element="7" value="abbr" readonly> <input type="text" maxlength="6" class="ansInput" data-element="5" value="title=" readonly>"World Health Organization"&gt; WHO&lt;/<input type="text" maxlength="4" class="ansInput" data-element="7"  value="abbr" readonly>&gt; was founded in 1948.</p>      
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="exerciseButton" id="exer27_1" data-element="mainExer27_1">Exercise 5</div>
+                    <div class="mainExer" id="mainExer27_1">
+                        <div class="question">
+                            <p>
+                                Quote the phrases “Eren Yeager” within such paragraph.<br>
+                                &lt;p&gt;Attack on Titan Season 4 &lt;q&gt;<input maxlength="11" class="ansInput" data-element="8" data-answer="Eren Yeager" data-group="27_1">&lt;/q&gt;&lt;/p&gt;<br>
+                            </p>
+                            <button class = "verify" id="27_1">Submit Answer</button>
+                        </div>
+                        <div class="answer" id="answer27_1">
+                            &lt;p&gt;Attack on Titan Season 4&lt;q&gt;<input maxlength="11" class="ansInput" data-element="8" value="Eren Yeager" readonly>&lt;/q&gt;&lt;/p&gt;<br>
                         </div>
                     </div>
                 </div>
