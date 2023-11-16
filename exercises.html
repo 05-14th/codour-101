@@ -1075,6 +1075,54 @@
                         </div>
                     </div>
                 </div>
+                <div>
+                    <div class="exerciseButton" id = "exer33_1" data-element="mainExer33_1">Exercise 5</div>
+                    <div class="mainExer" id="mainExer33_1">
+                        <div class="question">
+                            <p>
+                                Set the Background color to violet<br>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;head&gt;<br>
+                                &lt;style&gt;<br>
+                                body {background-color: <input data-answer="violet" data-group="33_1" maxlength="6">;}<br>
+                                h1   {color: blue;}<br>
+                                p    {color: red;}<br>
+                                &lt;/style&gt;<br>
+                                &lt;/head&gt;<br>
+                                &lt;body&gt;<br>
+
+                                &lt;h1&gt;<br>This is a heading&lt;/h1&gt;<br>
+                                &lt;p&gt;<br>This is a paragraph.&lt;/p&gt;<br>
+
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;<br>
+                            </p>
+                            <button class="verify" onclick="checkAns(this.id)" id="33_1">Submit Answer</button>
+                        </div>
+                        <div class="answer" id="answer33_1">
+                            <p>
+                                Set the Background color to violet<br>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;head&gt;<br>
+                                &lt;style&gt;<br>
+                                body {background-color: <input value="violet" maxlength="6" readonly>;}<br>
+                                h1   {color: blue;}<br>
+                                p    {color: red;}<br>
+                                &lt;/style&gt;<br>
+                                &lt;/head&gt;<br>
+                                &lt;body&gt;<br>
+
+                                &lt;h1&gt;<br>This is a heading&lt;/h1&gt;<br>
+                                &lt;p&gt;<br>This is a paragraph.&lt;/p&gt;<br>
+
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="toggleSection" style="display: none;" id="9e">
                 <h4>HTML Links</h4>
@@ -1620,9 +1668,9 @@
                                 &lt;html&gt;<br>
                                 &lt;head&gt;<br>
                                 &lt;style&gt;<br>
-                                <input data-group="58"> <input data-group="58">
-                                <input data-group="58">;
-                                <input data-group="58">
+                                <input data-group="58" maxlength="8" data-answer=".special"> <input data-group="58" maxlength="1" data-answer="{"><br>
+                                <input data-group="58" maxlength="10" data-answer="color:blue">;<br>
+                                <input data-group="58" maxlength="1" data-answer="}"><br>
                                 &lt;/style&gt;<br>
                                 &lt;/head&gt;<br>
                                 &lt;body&gt;<br>
@@ -1640,9 +1688,9 @@
                                 &lt;html&gt;<br>
                                 &lt;head&gt;<br>
                                 &lt;style&gt;<br>
-                                <input value=".special" readonly> <input value="&rbrace;" readonly>
-                                <input value="color:blue;" readonly>;
-                                <input value="&lbrace;" readonly>
+                                <input value=".special" readonly> <input value="&rbrace;" readonly><br>
+                                <input value="color:blue;" readonly>;<br>
+                                <input value="&lbrace;" readonly><br>
                                 &lt;/style&gt;<br>
                                 &lt;/head&gt;<br>
                                 &lt;body&gt;<br>
@@ -1667,7 +1715,7 @@
                                 &lt;/style&gt;<br>
                                 &lt;/head&gt;<br>
                                 &lt;body&gt;<br>
-                                &lt;h1 <input data-group="59"> &gt;<br>My Home Page&lt;/h1&gt;<br>
+                                &lt;h1 <input data-group="59" data-answer="class=&quot;mystyle&quot;" maxlength="15"> &gt;<br>My Home Page&lt;/h1&gt;<br>
                                 &lt;/body&gt;<br>
                                 &lt;/html&gt;<br>
                             </p>
@@ -1687,6 +1735,78 @@
                                 &lt;h1 <input value="class=&quot;mystyle&quot;" readonly>&gt;<br>My Home Page&lt;/h1&gt;<br>
                                 &lt;/body&gt;<br>
                                 &lt;/html&gt;<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="exerciseButton" id="exer59_1" data-element="mainExer59_1">Exercise 4</div>
+                    <div class="mainExer" id="mainExer59_1">
+                        <div class="question">
+                            <p>
+                                Make the styled class name “cyberpunk”.<br>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;head&gt;<br>
+                                &lt;style&gt;<br>
+                                .<input data-group="59_1" data-answer="cyberpunk" maxlength="9"> {<br>
+                                background-color: tomato;<br>
+                                color: white;<br>
+                                border: 2px solid black;<br>
+                                margin: 20px;<br>
+                                padding: 20px;<br>
+                                }<br>
+                                &lt;/style&gt;<br>
+                                &lt;/head&gt;<br>
+                                &lt;/html&gt;<br>
+                            </p>
+                            <button class="verify" onclick="checkAns(this.id)" id="59_1">Submit Answer</button>
+                        </div>
+                        <div class="answer" id="answer59_1">
+                            <p>
+                                Make the styled class name “cyberpunk”.<br>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;head&gt;<br>
+                                &lt;style&gt;<br>
+                                .<input value="cyberpunk" maxlength="9" readonly> {<br>
+                                background-color: tomato;<br>
+                                color: white;<br>
+                                border: 2px solid black;<br>
+                                margin: 20px;<br>
+                                padding: 20px;<br>
+                                }<br>
+                                &lt;/style&gt;<br>
+                                &lt;/head&gt;<br>
+                                &lt;/html&gt;<br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="exerciseButton" id="exer59_2" data-element="mainExer59_2">Exercise 5</div>
+                    <div class="mainExer" id="mainExer59_2">
+                        <div class="question">
+                            <p>
+                                Call the “cyberpunk” class in body<br>
+                                &lt;body&gt;<br>
+                                &lt;div class="<input data-answer="cyberpunk" data-group="59_2" maxlength="9">"&gt;<br>
+                                &lt;h2&gt;<br>Cyberpunk&lt;/h2&gt;<br>
+                                &lt;p&gt;<br>PC not found&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;/body&gt;<br>
+                            </p>
+                            <button class="verify" onclick="checkAns(this.id)" id="59_2">Submit Answer</button>
+                        </div>
+                        <div class="answer" id="answer59_2">
+                            <p>
+                                Call the “cyberpunk” class in body<br>
+                                &lt;body&gt;<br>
+                                &lt;div class="<input value="cyberpunk" maxlength="9" readonly>"&gt;<br>
+                                &lt;h2&gt;<br>Cyberpunk&lt;/h2&gt;<br>
+                                &lt;p&gt;<br>PC not found&lt;/p&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;/body&gt;<br>
                             </p>
                         </div>
                     </div>

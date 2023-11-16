@@ -1,0 +1,16 @@
+Defective
+-Classes, 2 - Curly Bracket
+-ID, 2 - Curly Bracket
+
+exer58
+
+CSS-1
+Classes - 2
+ID - 3
+Iframes  - 3
+Script - 1
+Computercode - 2
+Forms - 3
+Form Attr - 3
+Form Elems - 2
+Input Attr - 1
