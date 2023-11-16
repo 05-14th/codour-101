@@ -1,10 +1,17 @@
-2.	Call the “cyberpunk” class in body<br>
+1.	Set the Background color to violet
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+body {background-color: _____;}
+h1   {color: blue;}
+p    {color: red;}
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
 &lt;body&gt;<br>
 
-&lt;div class="______"&gt;<br>
-  &lt;h2&gt;<br>Cyberpunk&lt;/h2&gt;<br>
-  &lt;p&gt;<br>PC not found&lt;/p&gt;<br>
-&lt;/div&gt;<br>
+&lt;h1&gt;<br>This is a heading&lt;/h1&gt;<br>
+&lt;p&gt;<br>This is a paragraph.&lt;/p&gt;<br>
 
 &lt;/body&gt;<br>
-
+&lt;/html&gt;<br>
