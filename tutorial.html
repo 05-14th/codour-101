@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <title>Codour Tutorial</title>
+    <script src="js/flow_control.js"></script>
     <style>
         /*Animations*/
         @keyframes backgroundAnimation {
@@ -50,109 +51,28 @@
             padding: 0;
         }
 
-        .navOp {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-        }
-
-            .navOp li {
-                float: left;
-                border-right: 1px solid #bbb;
-            }
-
-                .navOp li a {
-                    display: block;
-                    color: white;
-                    text-align: center;
-                    padding: 14px 16px;
-                    text-decoration: none;
-                }
-
-                    .navOp li a:hover {
-                        background-color: #111;
-                    }
-
-        .active {
-            background-color: #2B3499;
-        }
-
         .content {
             display: flex;
             justify-content: center;
         }
 
-        form {
-            position: relative;
-            border: 1px solid black;
-            border-radius: 5%;
-            margin: 5px;
-            height: 400px;
-            width: 31%;
-            height: 75vh;
+        .tutorial-first{
+            width: 100%;
             display: flex;
+            justify-content: center;
         }
 
-        .submitButton {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            margin: 10px;
-            height: 50px;
-            width: 75px;
-            border-radius: 100%;
+        .circular{
+            margin: 50px;
         }
 
-        .submitButton:hover{
-            background-color: #999;
-        }
-
-        .w3school {
-            background: url("resources/w3s_logo.png");
-            background-position: center;
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-        }
-
-        .w3school:hover {
-            background: url("resources/w3s_bg.png");
-            background-position: center;
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            animation: backgroundAnimation 1s linear;
-        }
-        
-        .sololearn {
-            background: url("resources/sololearn_logo.png");
-            background-position: center;
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-        }
-
-        .sololearn:hover {
-            background: url("resources/sololearn_bg.png");
-            background-position: center;
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            animation: backgroundAnimation1 1s linear;
-        }
-        
-        .cheatsheet {
-            background: url("resources/cheatsheet_logo.png");
-            background-position: center;
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-        }
-
-        .cheatsheet:hover {
-            background: url("resources/cheatsheet_bg.png");
-            background-position: center;
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            animation: backgroundAnimation2 1s linear;
-        }
+        .circular img{
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                background-color: #333;
+                cursor: pointer;
+            }
         /* Style for the footer */
         footer {
             padding: 20px 0;
@@ -176,7 +96,6 @@
                 font-size: 18px;
                 margin-bottom: 10px;
             }
-
         /* Style for the useful links section */
         .useful-links {
             text-align: center;
@@ -255,11 +174,28 @@
                 align-items: center;
             }
         }
+
+        @media (max-width: 1117px){
+            .tutorial-first{
+                display: block;
+            }
+        }
     </style>
 </head>
 <body>
     <!-- Navigation Bar-->
     <div class="navBar">
+        <div class="navHeader">
+            <img src="resources/cheatsheet_logo_nbg.png" alt="html_logo">
+            <div>
+                <h2>Codour</h2>
+                <p style="font-size: 20px;"><i>
+                    Unlocking the Code to<br>
+                    Your Digital Journey
+                </i>
+                </p>
+            </div>
+        </div>
         <ul class="navOp">
             <li><a href="index.html">Home</a></li>
             <li><a class="active" href="tutorial.html">Tutorials</a></li>
@@ -268,20 +204,35 @@
             <li><a href="about.html">About</a></li>
         </ul>
     </div>
-    <center>
-        <h2>HTML Learning Sites</h2>
-        <div class="content">
-            <form action="https://www.w3schools.com/" class="w3school">
-                <input type="submit" class="submitButton" value="Visit"/>
-            </form>
-            <form action="https://www.sololearn.com/" class="sololearn">
-                <input type="submit" class="submitButton" value="Visit"/>
-            </form>
-            <form action="resources/html-cheat-sheet.pdf" class="cheatsheet">
-                <input type="submit" class="submitButton" value="Show"/>
-            </form>
+    <main>
+        <h2>Recommended Platforms for Learning More About HTML</h2>
+        <div class="tutorial-first">
+            <div class="circular">
+                <center>
+                    <img src="resources/w3s_logo.png" alt="tutorial logo" onclick="redirectToSite('https://www.w3schools.com/')">
+                    <h2>W3School</h2>
+                </center>
+            </div>
+            <div class="circular">
+                <center>
+                    <img src="resources/sololearn_logo.png" alt="tutorial logo" onclick="redirectToSite('https://www.sololearn.com/')">
+                    <h2>Sololearn</h2>
+                </center>
+            </div>
+            <div class="circular">
+                <center>
+                    <img src="resources/sdpt.png" alt="tutorial logo" onclick="redirectToSite('https://www.youtube.com/c/SDPTSolutions')">
+                    <h2>SDPT Solutions</h2>
+                </center>
+            </div>
+            <div class="circular">
+                <center>
+                    <img src="resources/fcc.png" alt="tutorial logo" onclick="redirectToSite('https://www.youtube.com/watch?v=kUMe1FH4CHE')">
+                    <h2>freecodecamp.org</h2>
+                </center>
+            </div>
         </div>
-    </center>
+    </main>
     <footer>
         <div class="footer-content">
             <div class="contact-info">

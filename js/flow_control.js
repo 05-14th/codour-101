@@ -164,7 +164,9 @@ function checkAns(id_){
     tapButton.disabled = true;
 }
 
-
+function redirectToSite(siteLink) {
+    window.location.href = siteLink; // Replace with the URL you want to redirect to
+}
 
 
 

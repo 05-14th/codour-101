@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color:coral;
+    background-attachment: fixed;
 }
 
 @keyframes slideIn {
@@ -23,6 +24,47 @@ form {
 }
 
 footer{
-    background-color: #FF6C22;
+    background-color: none;
 }
 
+.navOp {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    }
+
+.navOp li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+.navOp li a:hover {
+    background-color: #111;
+    }
+.active {
+    background-color: black;
+}
+
+@media (max-width: 500px){
+    .navOp{
+        display: block;
+    }
+}
+
+.navHeader{
+    background-color: rgba(0,0,0,0.25);
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+.navHeader img{
+    height: 100%;
+}

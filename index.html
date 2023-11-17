@@ -34,36 +34,14 @@
             margin: 0;
             padding: 0;
         }
-        .navOp {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-            }
-        .navOp li {
-            float: left;
-            border-right: 1px solid #bbb;
-            }
-        .navOp li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            }
-        .navOp li a:hover {
-            background-color: #111;
-            }
-        .active {
-            background-color: #2B3499;
-        }
+        
         .content {
             display: flex;
             justify-content: center;
             align-items: center;
             margin: 6%;
         }
+
         .logo {
             width: 35%;
             height: 35%;
@@ -73,41 +51,31 @@
             display: flex;
             justify-content: center;
             }
-        form {
-            position: relative;
-            border: 1px solid black;
-            border-radius: 5%;
+        
+            .button {
+            height: 50px;
+            width: 50px;
+            border-radius: 100%;
+            border: 1px solid #000000;
             margin: 5px;
-            height: 400px;
-            padding: 5px;
-            width: 31%;
-            display: block;
-            background: url("resources/logo.png");
-            background-position: center;
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
+            display: inline-block;
+            cursor: pointer;
         }
 
-            form:hover {
-                background: url("resources/timeline.png");
-                background-position: center;
-                background-size: 100% 100%;
-                background-repeat: no-repeat;
-                animation: backgroundAnimation 1s linear;
+            .button:hover {
+                background-color: #808080;
             }
 
-        .viewButton {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            margin: 10px;
-            height: 45px;
-            width: 100px;
-            border-radius: 100%;
-            }
+        .history_content {
+            display: none;
+        }
+        
+        .hisContent{
+            height: 60vh;
+        }
 
-        .viewButton:hover{
-            background-color: #999;
+        .header {
+            padding: 20px;
         }
 
         .features{
@@ -202,6 +170,12 @@
                padding: 15%;
                display: block;
             }
+
+            .navHeader{
+                width: 100%;
+                height: 100px;
+            }
+
             .logo{
                 width: 75%;
                 height: 75%;
@@ -229,11 +203,23 @@
                 padding: 19%;
             }
         }
+
     </style>
 </head>
 <body>
     <!-- Navigation Bar-->
     <div class="navBar">
+        <div class="navHeader">
+            <img src="resources/cheatsheet_logo_nbg.png" alt="html_logo">
+            <div>
+                <h2>Codour</h2>
+                <p style="font-size: 20px;"><i>
+                    Unlocking the Code to<br>
+                    Your Digital Journey
+                </i>
+                </p>
+            </div>
+        </div>
         <ul class="navOp">
             <li><a class="active" href="index.html">Home</a></li>
             <li><a href="tutorial.html">Tutorials</a></li>
@@ -252,14 +238,85 @@
     <div >
        
     </div>
+    <div class="header">
+        <h2>History of HTML</h2>
+        <p>HTML, or Hypertext Markup Language, is a fundamental language used for creating and structuring web content. It has a rich history dating back to the early days of the World Wide Web. Here is a brief overview of the history of HTML:</p>
+    </div>
     <center>
-        <div class="selection">
-            <form action="history.html">
-                <h4>History of HTML</h4>
-                <input class="viewButton" type="submit" value="View">
-            </form>
+        <section class="history">
+            <div class="button" title="1989-1990" data-element="de1"></div>
+            <div class="button" title="1993" data-element="de2"></div>
+            <div class="button" title="1995" data-element="de3"></div>
+            <div class="button" title="1997" data-element="de4"></div>
+            <div class="button" title="1999" data-element="de5"></div>
+            <div class="button" title="2000" data-element="de6"></div>
+            <div class="button" title="2008" data-element="de7"></div>
+            <div class="button" title="Latest" data-element="de8"></div>
+        </section>
+    </center>
+    <div class = "hisContent">
+    <center>
+        <div class="history_content" id="de1" style="display:block;">
+            <h2>The Birth of the Web (1989-1990):</h2>
+            <ul>
+                <li>Tim Berners-Lee, a British computer scientist, is credited with inventing the World Wide Web. In 1989, he proposed the idea of a global hypertext project while working at CERN (the European Organization for Nuclear Research).</li>
+                <li>In 1990, he wrote the first web browser and web server software and developed the first version of HTML to create and share documents on the nascent web.</li>
+            </ul>
+        </div>
+        <div class="history_content" id="de2">
+            <h2>HTML 1.0 (1993):</h2>
+            <ul>
+                <li>The first official specification of HTML, HTML 1.0, was published in 1993 as an Internet Draft.</li>
+                <li>HTML 1.0 provided basic elements like headings, paragraphs, lists, and links, forming the foundation of web documents.</li>
+            </ul>
+        </div>
+        <div class="history_content" id="de3">
+            <h2>HTML 2.0 (1995):</h2>
+            <ul>
+                <li>HTML 2.0 was the first standardized version of HTML, introduced in 1995.</li>
+                <li>It added support for tables, image embedding, and forms.</li>
+            </ul>
+        </div>
+        <div class="history_content" id="de4">
+            <h2>HTML 3.2 (1997):</h2>
+            <ul>
+                <li>HTML 3.2 was the next significant milestone, adding features like frames, client-side image maps, and improved support for tables and forms.</li>
+                <li>It was widely adopted and helped shape the web during the mid-1990s.</li>
+            </ul>
+        </div>
+        <div class="history_content" id="de5">
+            <h2>HTML 4.01 (1999):</h2>
+            <ul>
+                <li>HTML 4.01, the fourth major revision of HTML, was released in 1999.</li>
+                <li>It introduced CSS (Cascading Style Sheets) for styling web pages, which separated content and presentation.</li>
+                <li>HTML 4.01 had extensive support for multimedia, scripting, and accessibility features.</li>
+            </ul>
+        </div>
+        <div class="history_content" id="de6">
+            <h2>XHTML (2000):</h2>
+            <ul>
+                <li>XHTML (Extensible Hypertext Markup Language) was introduced as the next step in the evolution of HTML in 2000.</li>
+                <li>XHTML combined the rules of XML with HTML to create a stricter, more structured version of HTML.</li>
+                <li>It aimed to make web pages more compatible with XML and improve web document structure.</li>
+            </ul>
+        </div>
+        <div class="history_content" id="de7">
+            <h2>HTML5 (2008):</h2>
+            <ul>
+                <li>HTML5, the fifth major version of HTML, was introduced in 2008.</li>
+                <li>It brought significant enhancements, including native support for audio and video, canvas for drawing, and the introduction of semantic elements (e.g., &lt;header&gt;, &lt;nav&gt;, &lt;footer&gt;).</li>
+                <li>HTML5 also improved web forms and introduced APIs for geolocation, local storage, and more.</li>
+            </ul>
+        </div>
+        <div class="history_content" id="de8">
+            <h2>HTML Living Standard (ongoing):</h2>
+            <ul>
+                <li>Unlike previous versions, HTML5 is considered a "living standard," which means it's continuously evolving rather than having a fixed specification.</li>
+                <li>It continues to receive updates and improvements to keep up with the changing web landscape and technological advancements.</li>
+            </ul>
         </div>
     </center>
+    </div>
     <footer>
         <div class="footer-content">
             <div class="contact-info">
@@ -291,6 +348,31 @@
             </div>
         </div>
     </footer>
+    <script>
+        const showButton = document.querySelectorAll(".button");
+        const hideContent = document.querySelectorAll(".history_content");
+
+        function showTime(event) {
+            const button = event.target;
+            const elementId = button.getAttribute("data-element");
+            const targetElement = document.getElementById(elementId);
+
+            if (targetElement) {
+                hideContent.forEach(content => {
+                    content.style.display = "none";
+                });
+                if (targetElement.style.display === "none" || targetElement.style.display === "") {
+                    targetElement.style.display = "block";
+                } else {
+                    targetElement.style.display = "none";
+                }
+            }
+        }
+
+        showButton.forEach(button => {
+            button.addEventListener("click", showTime);
+        });
+    </script>
 </body>
 </html>
 
